@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apparel Thrift</title>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
+
+    <link rel="stylesheet" href="contact.css">
+</head>
+<body>
+
+    <section id="header">
+        <div class="nav1">
+            <p class="logo">Apparel.</p>
+        </div>
+        <div class="nav2">
+            <div>
+                <ul id="navbar">
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="collection.html">New Collection</a></li>
+                    <li><a href="shop.html">Shop</a></li>
+                    <li><a class="active" href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section id="hero">
+        <h1>Get In Touch</h1>
+        <h3>Want to get in touch? We'd love to hear from you, Here's how you can reach us.</h3>
+    </section>
+    
+    <section class="contacts">
+        <div class="sales">
+            <h3>Talk To Sales</h3>
+            <p>Interested  in Apparel's products and marketing? Just pick up the phone to chat with a member of our sales team.</p>
+            <p id="phone">+254 797 423 287</p>
+        </div>
+
+        <div class="support">
+            <h3>Contact Customer Support</h3>
+            <p>Sometimes you need a little help from your friends or an Apparel supporrt rep. Don't worry... we're here for you.</p>
+            <a href="#">Contact Support</a>
+        </div>
+    </section>
+
+    <section class="mail">
+        <h2>Do you want to recieve emails about new apparel? <br> Submit your email address and agree to the terms and conditions.</h2>
+        <form>
+            <label for="user-email">Email:</label>
+            <input type="text" name="email" id="user-email">
+        </form>
+        <form>
+            <input type="checkbox" name="terms" id="agree">
+            <label for="agree">I Agree To The Terms And Conditions.</label>
+        </form>
+        <a href="#">Contact Support</a>
+    </section>
+
+    <section class="footer">
+        <div class="first">
+            <h2>Apparel.</h2>
+            <p>The world's largest online thrift store.</p>
+        </div>
+
+        <div class="house">
+        <div class="explore">
+            <h3>Explore</h3>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="collection.html">New Collection</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </div>
+        <div class="visit">
+            <h3>Visit</h3>
+            <p>CBD Opp. I&M Building, Str.1000<br/>Nairobi, Kenya</p>
+            <h3>New Business</h3>
+            <p>info@apparelthrift.com</p>
+            <p>+254 797 423 287</p>
+        </div>
+        <div class="follow">
+            <h3>Follow</h3>
+            <ul>
+                <li><a href="#">Instagram</a></li>
+                <li><a href="#">Facebook</a></li>
+                <li><a href="#">Twitter</a></li>
+                <li><a href="#">Display</a></li>
+            </ul>
+        </div>
+        <div class="legal">
+            <h3>Legal</h3>
+            <ul>
+                <li><a href="#">Terms & Conditions</a></li>
+                <li><a href="#">Privacy</a></li>
+            </ul>
+        </div>
+    </div>
+    </section>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Didact+Gothic&family=Poppins:wght@100;300;500;600;700;800&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Italiana&family=Yeseva+One&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        #navbar {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        #header {
+            position: fixed;
+            z-index: 9999;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
+            top: 0;
+            left: 0;
+        }
+
+        .nav1{
+            height: 100px;
+            width: 100%;
+            justify-content: center;
+            align-items: center;
+            align-content: center;
+            display: flex;
+            background: #e3e6f3;
+        }
+
+        .logo {
+            font-family: 'Yeseva One', cursive;
+            font-size: 72px;
+            text-decoration: none;
+            color: #000000;
+            align-content: center;
+            justify-content: center;
+        }
+
+        .nav2 {
+            height: 40px;
+            width: 100%;
+            align-items: center;
+            justify-content: center;
+            align-content: center;
+            display: flex;
+            background: #e3e6f3;
+        }
+
+        #navbar li {
+            list-style: none;
+            padding: 0 20px;
+            position: relative;
+        }
+
+        #navbar li a {
+            text-decoration: none;
+            font-size: 16px;
+            font-weight: 600;
+            color: #1a1a1a;
+            transition: all 0.3s ease;
+        }
+
+        #navbar li a:hover,
+        #navbar li a.active {
+            color: #088178;
+        }
+
+        #navbar li a.active::after,
+        #navbar li a:hover::after {
+            content: "";
+            width: 30%;
+            height: 2px;
+            background: #088178;
+            position: absolute;
+            bottom: -4px;
+            left: 20px;
+        }
+
+        #hero {
+            border-top: 130px black solid;
+            background-image: url('images/call.jpg');
+            height: 100vh;
+            width: 100%;
+            background-size: cover;
+            padding: 0 80px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            color: #e3e6f3;
+        }
+
+        h1 {
+            font-family: 'Yeseva One', cursive;
+            font-size: 112px;
+            font-weight: 400;
+            color: #088178;
+        }
+
+        p{
+            padding-bottom: 20px;
+            font-weight: 300;
+            font-size: 18px;
+            color: #1a1a1a;
+        }
+
+        #hero h3{
+            color: #088178;
+        }
+
+        .contacts {
+            width: 100%;
+            height: 300px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            align-content: center;
+            padding: 20px 0;
+        }
+
+        .contacts .sales {
+            height: 100%;
+            width: 49.5%;
+            background-color: #e3e6f3;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: center;
+        }
+
+        .contacts .sales #phone{
+            font-size: 24px;
+            font-weight: 600;
+        }
+
+        .contacts .support {
+            height: 100%;
+            width: 49.5%;
+            background-color: #e3e6f3;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: center;
+        }
+
+        .contacts .support a{
+            height: 60px;
+            width: 200px;
+            color: #e3e6f3;
+            background-color: #088178;
+            font-size: 15px;
+            font-weight: 800;
+            border: 0;
+            padding-left: 20px;
+            padding-right: 20px;
+            cursor: pointer;
+            text-decoration: none;
+            text-align: center;
+            align-items: center;
+            justify-content: center;
+            display: flex;
+        }
+
+        .contacts .support a:hover{
+            color: #088178;
+            background-color: #e3e6f3;
+            transition: all 0.3s ease-in-out;
+            border: #088178 1px solid;
+        }
+
+        .contacts .sales h3{
+            font-size: 28px;
+            color: #088178;
+        }
+
+        .contacts .support h3{
+            font-size: 28px;
+            color: #088178;
+        }
+
+        .mail{
+            width: 100%;
+            height: 300px;
+            padding: 40px;
+            background: #e3e6f3;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-content: center;
+            margin-bottom: 20px;
+        }
+
+        .mail #user-email{
+            height: 40px;
+            width: 300px;
+        }
+
+        .contacts p{
+            padding: 20px;
+            text-align: center;
+        }
+
+        .mail a{
+            height: 60px;
+            width: 200px;
+            color: #e3e6f3;
+            background-color: #088178;
+            font-size: 15px;
+            font-weight: 800;
+            border: 0;
+            padding-left: 20px;
+            padding-right: 20px;
+            cursor: pointer;
+            text-decoration: none;
+            text-align: center;
+            align-items: center;
+            justify-content: center;
+            display: flex;
+            margin: 10px;
+        }
+
+        .mail a:hover{
+            color: #088178;
+            background-color: #e3e6f3;
+            transition: all 0.3s ease-in-out;
+            border: #088178 1px solid;
+        }
+
+        .footer{
+            width: 100%;
+            height: 300px;
+            background: #e3e6f3;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 40px;
+        }
+
+        .footer .first{
+            height: 100%;
+            width: 20%;
+        }
+
+        .footer .first h2{
+            font-family: 'Yeseva One', cursive;
+            color: #088178;
+        }
+
+        .footer .house{
+            height: 100%;
+            width: 55%;
+            display: flex;
+            justify-content: space-between;
+
+        }
+
+        .footer .house .explore {
+            height: 100%;
+            width: 25%;
+        }
+
+        .footer .house .explore ul {
+            list-style: none;
+        }
+
+        .footer .house .explore ul li a{
+            text-decoration: none;
+            color: #088178;
+        }
+
+        .footer .house .visit {
+            height: 100%;
+            width: 25%;
+        }
+
+        .footer .house .visit p{
+            color: #088178;
+        }
+
+        .footer .house .follow {
+            height: 100%;
+            width: 25%;
+        }
+
+        .footer .house .follow ul {
+            list-style: none;
+        }
+
+        .footer .house .follow ul li a{
+            text-decoration: none;
+            color: #088178;
+        }
+
+        .footer .house .legal {
+            height: 100%;
+            width: 25%;
+        }
+
+        .footer .house .legal ul {
+            list-style: none;
+        }
+
+        .footer .house .legal ul li a{
+            text-decoration: none;
+            color: #088178;
+        }
+    </style>
+
+</body>
+</html>
+
